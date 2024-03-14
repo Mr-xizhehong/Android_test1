@@ -6,4 +6,7 @@
     <string name="title_activity_second1">SecondActivity1</string>
     <string name="title_activity_second2">SecondActivity2</string>
     <string name="title_activity_third">ThirdActivity</string>
+    <string name="title_activity_normal">NormalActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
 </resources>
