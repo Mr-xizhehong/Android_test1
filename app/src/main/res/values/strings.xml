@@ -9,4 +9,7 @@
     <string name="title_activity_normal">NormalActivity</string>
     <string name="title_activity_dialog">DialogActivity</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_success">SuccessActivity</string>
+    <string name="title_activity_title">title</string>
 </resources>

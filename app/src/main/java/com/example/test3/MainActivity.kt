@@ -1,4 +1,4 @@
-package com.examplpe.test3
+package com.example.test3
 
 import android.app.Activity
 import android.content.ContentValues.TAG
@@ -16,7 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.R
-import com.examplpe.test3.ui.theme.MyApplicationTheme
+import com.example.test3.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
     val className = this::class.simpleName
@@ -29,11 +29,11 @@ class MainActivity : ComponentActivity() {
         val button2:Button = findViewById(R.id.test3_button2)
 
         button1.setOnClickListener {
-            val intent1 = Intent(this,NormalActivity::class.java)
+            val intent1 = Intent(this, NormalActivity::class.java)
             startActivity(intent1)
         }
         button2.setOnClickListener {
-            val intent2 = Intent(this,DialogActivity::class.java)
+            val intent2 = Intent(this, DialogActivity::class.java)
             startActivity(intent2)
         }
     }

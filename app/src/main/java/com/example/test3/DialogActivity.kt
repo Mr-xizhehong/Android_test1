@@ -1,4 +1,4 @@
-package com.examplpe.test3
+package com.example.test3
 
 import android.os.Bundle
 import android.util.Log
@@ -12,13 +12,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.R
-import com.examplpe.test3.ui.theme.MyApplicationTheme
+import com.example.test3.ui.theme.MyApplicationTheme
 
-class NormalActivity : ComponentActivity() {
+class DialogActivity : ComponentActivity() {
     val className = this::class.simpleName
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.test3_normal_layout2)
+        setContentView(R.layout.test3_dialog_layout)
         Log.d("message", className +": onCreate");
     }
 
@@ -54,7 +54,7 @@ class NormalActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting6(name: String, modifier: Modifier = Modifier) {
+fun Greeting7(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -63,8 +63,8 @@ fun Greeting6(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview6() {
+fun GreetingPreview7() {
     MyApplicationTheme {
-        Greeting6("Android")
+        Greeting7("Android")
     }
 }

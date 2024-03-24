@@ -1,4 +1,4 @@
-package com.examplpe.test3
+package com.example.test3
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -15,7 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.R
-import com.examplpe.test3.ui.theme.MyApplicationTheme
+import com.example.test3.ui.theme.MyApplicationTheme
 
 class FirstActivity : ComponentActivity() {
     val className = this::class.simpleName
@@ -26,7 +26,7 @@ class FirstActivity : ComponentActivity() {
 
         val button3:Button = findViewById(R.id.test3_button3)
         button3.setOnClickListener {
-            val intent = Intent(this,SecondActivity::class.java)
+            val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,9 +1,7 @@
-package com.examplpe.test3
+package com.example.test3
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,20 +12,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.R
-import com.examplpe.test3.ui.theme.MyApplicationTheme
+import com.example.test3.ui.theme.MyApplicationTheme
 
-class SecondActivity : ComponentActivity() {
+class NormalActivity : ComponentActivity() {
     val className = this::class.simpleName
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("message",className +": onCreate")
-        setContentView(R.layout.test3_second_layout2)
-
-        val button4: Button = findViewById(R.id.test3_button4)
-        button4.setOnClickListener {
-            val intent = Intent(this,FirstActivity::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.test3_normal_layout2)
+        Log.d("message", className +": onCreate");
     }
 
     override fun onStart() {
@@ -62,7 +54,7 @@ class SecondActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting9(name: String, modifier: Modifier = Modifier) {
+fun Greeting6(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -71,8 +63,8 @@ fun Greeting9(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview9() {
+fun GreetingPreview6() {
     MyApplicationTheme {
-        Greeting9("Android")
+        Greeting6("Android")
     }
 }
